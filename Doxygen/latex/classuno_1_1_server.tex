@@ -1,0 +1,153 @@
+\hypertarget{classuno_1_1_server}{}\doxysection{uno.\+Server Class Reference}
+\label{classuno_1_1_server}\index{uno.Server@{uno.Server}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classuno_1_1_server_a3c0e9463e76494f770bd8a455f3fcf49}{Server}} (int new\+Player\+Count)
+\item 
+void \mbox{\hyperlink{classuno_1_1_server_acb27956dcd8bda9ab75c351a81feef7a}{play\+UNO}} ()
+\item 
+void \mbox{\hyperlink{classuno_1_1_server_a70db4af35339c8ce8b4ee098359d891b}{print\+Prompt}} ()
+\item 
+boolean \mbox{\hyperlink{classuno_1_1_server_a663ba7d92f3d026a13ab431b951d5f0e}{check\+If\+Win}} ()
+\item 
+void \mbox{\hyperlink{classuno_1_1_server_a1e9c080692f18f5dc14f7616cc8f2bd8}{update\+Current\+Player}} ()
+\item 
+boolean \mbox{\hyperlink{classuno_1_1_server_a757abbab4a122a1eeadfb7bca098219d}{validate\+Two\+Cards}} (\mbox{\hyperlink{classuno_1_1_card}{Card}} card1, \mbox{\hyperlink{classuno_1_1_card}{Card}} card2)
+\item 
+void \mbox{\hyperlink{classuno_1_1_server_a2bbd221b0a1ab8ea8684d9dfdadb81cf}{parse\+Two\+Cards}} (\mbox{\hyperlink{classuno_1_1_card}{Card}} card1, \mbox{\hyperlink{classuno_1_1_card}{Card}} card2)
+\item 
+void \mbox{\hyperlink{classuno_1_1_server_a15c61b2b32572216f1ac20ffd8478951}{parse\+New\+Card}} (\mbox{\hyperlink{classuno_1_1_card}{Card}} card)
+\item 
+boolean \mbox{\hyperlink{classuno_1_1_server_adeabcb25283e66b9be63913d8944f2fa}{valid\+Card}} (\mbox{\hyperlink{classuno_1_1_card}{Card}} card)
+\item 
+boolean \mbox{\hyperlink{classuno_1_1_server_a7bcc89ad1ad90798fe26614643877e3d}{should\+Be\+Penalized}} (\mbox{\hyperlink{classuno_1_1_card}{Card}} curr\+Card)
+\item 
+void \mbox{\hyperlink{classuno_1_1_server_ae1ba90135e4741402e58e400cd85972e}{change\+Direction}} ()
+\item 
+\mbox{\Hypertarget{classuno_1_1_server_a7c052827abc478af500d33457055dd24}\label{classuno_1_1_server_a7c052827abc478af500d33457055dd24}} 
+int {\bfseries get\+Player\+Count} ()
+\item 
+\mbox{\Hypertarget{classuno_1_1_server_aa4db3fa05141cd96f8cbb5ebeabbce4d}\label{classuno_1_1_server_aa4db3fa05141cd96f8cbb5ebeabbce4d}} 
+\mbox{\hyperlink{enumuno_1_1_util_1_1_color}{Color}} {\bfseries get\+Curr\+Color} ()
+\item 
+\mbox{\Hypertarget{classuno_1_1_server_af84f0dcc15bc3e421f7189dfe4ac9ccc}\label{classuno_1_1_server_af84f0dcc15bc3e421f7189dfe4ac9ccc}} 
+int {\bfseries get\+Curr\+Number} ()
+\item 
+\mbox{\Hypertarget{classuno_1_1_server_afa66b27bfbacd7a207f0503ed290bde4}\label{classuno_1_1_server_afa66b27bfbacd7a207f0503ed290bde4}} 
+\mbox{\hyperlink{enumuno_1_1_util_1_1_special}{Special}} {\bfseries get\+Curr\+Special} ()
+\item 
+\mbox{\Hypertarget{classuno_1_1_server_ad45955dda18d4757f4a3d102aedc46c2}\label{classuno_1_1_server_ad45955dda18d4757f4a3d102aedc46c2}} 
+\mbox{\hyperlink{enumuno_1_1_util_1_1_direction}{Direction}} {\bfseries get\+Direction} ()
+\item 
+\mbox{\Hypertarget{classuno_1_1_server_a2742d6d937f4648c85c713d74cfcd043}\label{classuno_1_1_server_a2742d6d937f4648c85c713d74cfcd043}} 
+int {\bfseries get\+Winner} ()
+\item 
+\mbox{\Hypertarget{classuno_1_1_server_a3fcbc023052e903abe944585e16bbcdb}\label{classuno_1_1_server_a3fcbc023052e903abe944585e16bbcdb}} 
+\mbox{\hyperlink{classuno_1_1_player}{Player}} {\bfseries get\+Player\+By\+Index} (int player\+Index)
+\item 
+\mbox{\Hypertarget{classuno_1_1_server_a64667ee9e4814c46dcd0af8a03da1482}\label{classuno_1_1_server_a64667ee9e4814c46dcd0af8a03da1482}} 
+int {\bfseries get\+Next\+Draw} ()
+\item 
+\mbox{\Hypertarget{classuno_1_1_server_a9e3150b31d232e5bbe1678122527f035}\label{classuno_1_1_server_a9e3150b31d232e5bbe1678122527f035}} 
+int {\bfseries get\+Current\+Player} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classuno_1_1_server_a3c0e9463e76494f770bd8a455f3fcf49}\label{classuno_1_1_server_a3c0e9463e76494f770bd8a455f3fcf49}} 
+\index{uno.Server@{uno.Server}!Server@{Server}}
+\index{Server@{Server}!uno.Server@{uno.Server}}
+\doxysubsubsection{\texorpdfstring{Server()}{Server()}}
+{\footnotesize\ttfamily uno.\+Server.\+Server (\begin{DoxyParamCaption}\item[{int}]{new\+Player\+Count }\end{DoxyParamCaption})}
+
+Initialize a \mbox{\hyperlink{classuno_1_1_server}{Server}} Object with new\+Player\+Count number of players 
+\begin{DoxyParams}{Parameters}
+{\em new\+Player\+Count} & number of players in the game \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classuno_1_1_server_ae1ba90135e4741402e58e400cd85972e}\label{classuno_1_1_server_ae1ba90135e4741402e58e400cd85972e}} 
+\index{uno.Server@{uno.Server}!changeDirection@{changeDirection}}
+\index{changeDirection@{changeDirection}!uno.Server@{uno.Server}}
+\doxysubsubsection{\texorpdfstring{changeDirection()}{changeDirection()}}
+{\footnotesize\ttfamily void uno.\+Server.\+change\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+change the direction of the game. This method will be called when a reverse card is played \mbox{\Hypertarget{classuno_1_1_server_a663ba7d92f3d026a13ab431b951d5f0e}\label{classuno_1_1_server_a663ba7d92f3d026a13ab431b951d5f0e}} 
+\index{uno.Server@{uno.Server}!checkIfWin@{checkIfWin}}
+\index{checkIfWin@{checkIfWin}!uno.Server@{uno.Server}}
+\doxysubsubsection{\texorpdfstring{checkIfWin()}{checkIfWin()}}
+{\footnotesize\ttfamily boolean uno.\+Server.\+check\+If\+Win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method checks if the current player wins after the player\textquotesingle{}s turn \mbox{\Hypertarget{classuno_1_1_server_a15c61b2b32572216f1ac20ffd8478951}\label{classuno_1_1_server_a15c61b2b32572216f1ac20ffd8478951}} 
+\index{uno.Server@{uno.Server}!parseNewCard@{parseNewCard}}
+\index{parseNewCard@{parseNewCard}!uno.Server@{uno.Server}}
+\doxysubsubsection{\texorpdfstring{parseNewCard()}{parseNewCard()}}
+{\footnotesize\ttfamily void uno.\+Server.\+parse\+New\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classuno_1_1_card}{Card}}}]{card }\end{DoxyParamCaption})}
+
+This method parses the new card played out by a player and modifies the game state. \mbox{\Hypertarget{classuno_1_1_server_a2bbd221b0a1ab8ea8684d9dfdadb81cf}\label{classuno_1_1_server_a2bbd221b0a1ab8ea8684d9dfdadb81cf}} 
+\index{uno.Server@{uno.Server}!parseTwoCards@{parseTwoCards}}
+\index{parseTwoCards@{parseTwoCards}!uno.Server@{uno.Server}}
+\doxysubsubsection{\texorpdfstring{parseTwoCards()}{parseTwoCards()}}
+{\footnotesize\ttfamily void uno.\+Server.\+parse\+Two\+Cards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classuno_1_1_card}{Card}}}]{card1,  }\item[{\mbox{\hyperlink{classuno_1_1_card}{Card}}}]{card2 }\end{DoxyParamCaption})}
+
+This function is called after validation of the two cards. The game state will be changed according to card2. 
+\begin{DoxyParams}{Parameters}
+{\em card1} & first card being played out. \\
+\hline
+{\em card2} & second card being played out. It will be the top card on the discard pile. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classuno_1_1_server_acb27956dcd8bda9ab75c351a81feef7a}\label{classuno_1_1_server_acb27956dcd8bda9ab75c351a81feef7a}} 
+\index{uno.Server@{uno.Server}!playUNO@{playUNO}}
+\index{playUNO@{playUNO}!uno.Server@{uno.Server}}
+\doxysubsubsection{\texorpdfstring{playUNO()}{playUNO()}}
+{\footnotesize\ttfamily void uno.\+Server.\+play\+UNO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method is responsible for initiating a game with num\+Player players. \mbox{\Hypertarget{classuno_1_1_server_a70db4af35339c8ce8b4ee098359d891b}\label{classuno_1_1_server_a70db4af35339c8ce8b4ee098359d891b}} 
+\index{uno.Server@{uno.Server}!printPrompt@{printPrompt}}
+\index{printPrompt@{printPrompt}!uno.Server@{uno.Server}}
+\doxysubsubsection{\texorpdfstring{printPrompt()}{printPrompt()}}
+{\footnotesize\ttfamily void uno.\+Server.\+print\+Prompt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method will print the current game state and the current player\textquotesingle{}s cards. \mbox{\Hypertarget{classuno_1_1_server_a7bcc89ad1ad90798fe26614643877e3d}\label{classuno_1_1_server_a7bcc89ad1ad90798fe26614643877e3d}} 
+\index{uno.Server@{uno.Server}!shouldBePenalized@{shouldBePenalized}}
+\index{shouldBePenalized@{shouldBePenalized}!uno.Server@{uno.Server}}
+\doxysubsubsection{\texorpdfstring{shouldBePenalized()}{shouldBePenalized()}}
+{\footnotesize\ttfamily boolean uno.\+Server.\+should\+Be\+Penalized (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classuno_1_1_card}{Card}}}]{curr\+Card }\end{DoxyParamCaption})}
+
+This method will test whether the current player should be penalized. \mbox{\Hypertarget{classuno_1_1_server_a1e9c080692f18f5dc14f7616cc8f2bd8}\label{classuno_1_1_server_a1e9c080692f18f5dc14f7616cc8f2bd8}} 
+\index{uno.Server@{uno.Server}!updateCurrentPlayer@{updateCurrentPlayer}}
+\index{updateCurrentPlayer@{updateCurrentPlayer}!uno.Server@{uno.Server}}
+\doxysubsubsection{\texorpdfstring{updateCurrentPlayer()}{updateCurrentPlayer()}}
+{\footnotesize\ttfamily void uno.\+Server.\+update\+Current\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+update the current player according to the current direction of the game \mbox{\Hypertarget{classuno_1_1_server_a757abbab4a122a1eeadfb7bca098219d}\label{classuno_1_1_server_a757abbab4a122a1eeadfb7bca098219d}} 
+\index{uno.Server@{uno.Server}!validateTwoCards@{validateTwoCards}}
+\index{validateTwoCards@{validateTwoCards}!uno.Server@{uno.Server}}
+\doxysubsubsection{\texorpdfstring{validateTwoCards()}{validateTwoCards()}}
+{\footnotesize\ttfamily boolean uno.\+Server.\+validate\+Two\+Cards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classuno_1_1_card}{Card}}}]{card1,  }\item[{\mbox{\hyperlink{classuno_1_1_card}{Card}}}]{card2 }\end{DoxyParamCaption})}
+
+This function is called to validate when two cards are played out. The two cards are valid iff the addition or subtraction of the two cards are equal to the current number. 
+\begin{DoxyParams}{Parameters}
+{\em card1} & first card played out. \\
+\hline
+{\em card2} & second card played out. It will be the top card on the discard pile. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the two cards are valid 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classuno_1_1_server_adeabcb25283e66b9be63913d8944f2fa}\label{classuno_1_1_server_adeabcb25283e66b9be63913d8944f2fa}} 
+\index{uno.Server@{uno.Server}!validCard@{validCard}}
+\index{validCard@{validCard}!uno.Server@{uno.Server}}
+\doxysubsubsection{\texorpdfstring{validCard()}{validCard()}}
+{\footnotesize\ttfamily boolean uno.\+Server.\+valid\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classuno_1_1_card}{Card}}}]{card }\end{DoxyParamCaption})}
+
+This method tests whether the card that the current player intends to play out is valid, according to the last card that was played out. However, whether a player will be penalized will be checked later by \mbox{\hyperlink{classuno_1_1_server_a7bcc89ad1ad90798fe26614643877e3d}{should\+Be\+Penalized()}}. Therefore, one player may be penalized even though \mbox{\hyperlink{classuno_1_1_server_adeabcb25283e66b9be63913d8944f2fa}{valid\+Card()}} returns true. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/wangy/\+Idea\+Projects/sp21-\/cs242-\/assignment1/src/uno/Server.\+java\end{DoxyCompactItemize}

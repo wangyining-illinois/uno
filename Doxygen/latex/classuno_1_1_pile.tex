@@ -1,0 +1,59 @@
+\hypertarget{classuno_1_1_pile}{}\doxysection{uno.\+Pile Class Reference}
+\label{classuno_1_1_pile}\index{uno.Pile@{uno.Pile}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classuno_1_1_pile_a8b485df38c16a8962295d4491a5955b3}{Pile}} ()
+\item 
+\mbox{\hyperlink{classuno_1_1_card}{Card}} \mbox{\hyperlink{classuno_1_1_pile_a5bd1216376a9a9a1255cd7c9c958774c}{draw\+From\+Pile}} ()
+\item 
+void \mbox{\hyperlink{classuno_1_1_pile_aee7f32c9ec327081cfbd07ca83067ecc}{discard}} (\mbox{\hyperlink{classuno_1_1_card}{Card}} card)
+\item 
+void \mbox{\hyperlink{classuno_1_1_pile_a917ff1de3b78899d3f02a8ea104383c6}{discard\+All}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classuno_1_1_pile}{Pile}} Object represents the draw pile and the discard pile in a UNO game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classuno_1_1_pile_a8b485df38c16a8962295d4491a5955b3}\label{classuno_1_1_pile_a8b485df38c16a8962295d4491a5955b3}} 
+\index{uno.Pile@{uno.Pile}!Pile@{Pile}}
+\index{Pile@{Pile}!uno.Pile@{uno.Pile}}
+\doxysubsubsection{\texorpdfstring{Pile()}{Pile()}}
+{\footnotesize\ttfamily uno.\+Pile.\+Pile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The constructor initiates the draw pile and the discard pile. The draw pile will be filled with 108 cards that have been shuffled. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classuno_1_1_pile_aee7f32c9ec327081cfbd07ca83067ecc}\label{classuno_1_1_pile_aee7f32c9ec327081cfbd07ca83067ecc}} 
+\index{uno.Pile@{uno.Pile}!discard@{discard}}
+\index{discard@{discard}!uno.Pile@{uno.Pile}}
+\doxysubsubsection{\texorpdfstring{discard()}{discard()}}
+{\footnotesize\ttfamily void uno.\+Pile.\+discard (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classuno_1_1_card}{Card}}}]{card }\end{DoxyParamCaption})}
+
+add a card to the discard pile \mbox{\hyperlink{classuno_1_1_player}{Player}} will call this function to play out a hand card 
+\begin{DoxyParams}{Parameters}
+{\em card} & The card that a \mbox{\hyperlink{classuno_1_1_player}{Player}} would like to play out. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classuno_1_1_pile_a917ff1de3b78899d3f02a8ea104383c6}\label{classuno_1_1_pile_a917ff1de3b78899d3f02a8ea104383c6}} 
+\index{uno.Pile@{uno.Pile}!discardAll@{discardAll}}
+\index{discardAll@{discardAll}!uno.Pile@{uno.Pile}}
+\doxysubsubsection{\texorpdfstring{discardAll()}{discardAll()}}
+{\footnotesize\ttfamily void uno.\+Pile.\+discard\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A helper function used by the \mbox{\hyperlink{classuno_1_1_server}{Server}} to discard all cards in the draw pile. \mbox{\Hypertarget{classuno_1_1_pile_a5bd1216376a9a9a1255cd7c9c958774c}\label{classuno_1_1_pile_a5bd1216376a9a9a1255cd7c9c958774c}} 
+\index{uno.Pile@{uno.Pile}!drawFromPile@{drawFromPile}}
+\index{drawFromPile@{drawFromPile}!uno.Pile@{uno.Pile}}
+\doxysubsubsection{\texorpdfstring{drawFromPile()}{drawFromPile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classuno_1_1_card}{Card}} uno.\+Pile.\+draw\+From\+Pile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+remove the top \mbox{\hyperlink{classuno_1_1_card}{Card}} from the draw pile \begin{DoxyReturn}{Returns}
+the top \mbox{\hyperlink{classuno_1_1_card}{Card}} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/wangy/\+Idea\+Projects/sp21-\/cs242-\/assignment1/src/uno/Pile.\+java\end{DoxyCompactItemize}

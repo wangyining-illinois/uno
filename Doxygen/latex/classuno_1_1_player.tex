@@ -1,0 +1,88 @@
+\hypertarget{classuno_1_1_player}{}\doxysection{uno.\+Player Class Reference}
+\label{classuno_1_1_player}\index{uno.Player@{uno.Player}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classuno_1_1_player_ab288f950ef06f03f76ed397b23b35b37}{Player}} ()
+\item 
+void \mbox{\hyperlink{classuno_1_1_player_a92270d5e395bf4ed3f1c4935281be78c}{draw}} (\mbox{\hyperlink{classuno_1_1_card}{Card}} new\+Card)
+\item 
+int \mbox{\hyperlink{classuno_1_1_player_aeba1e865cb32d7b21cb9f207e04213ad}{get\+Card\+Count}} ()
+\item 
+\mbox{\hyperlink{classuno_1_1_card}{Card}} \mbox{\hyperlink{classuno_1_1_player_a2ec380b281354b36931f43c4ed5a6fe0}{get\+Card}} (int card\+Index)
+\item 
+\mbox{\hyperlink{classuno_1_1_card}{Card}} \mbox{\hyperlink{classuno_1_1_player_a75d2ad088793a1313eb1137d8a188a04}{play\+Out\+Card}} (int card\+Index)
+\item 
+void \mbox{\hyperlink{classuno_1_1_player_a1459310dad566aae49532ded63f247bf}{print\+Cards}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classuno_1_1_player_ab288f950ef06f03f76ed397b23b35b37}\label{classuno_1_1_player_ab288f950ef06f03f76ed397b23b35b37}} 
+\index{uno.Player@{uno.Player}!Player@{Player}}
+\index{Player@{Player}!uno.Player@{uno.Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily uno.\+Player.\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize a \mbox{\hyperlink{classuno_1_1_player}{Player}} Object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classuno_1_1_player_a92270d5e395bf4ed3f1c4935281be78c}\label{classuno_1_1_player_a92270d5e395bf4ed3f1c4935281be78c}} 
+\index{uno.Player@{uno.Player}!draw@{draw}}
+\index{draw@{draw}!uno.Player@{uno.Player}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void uno.\+Player.\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classuno_1_1_card}{Card}}}]{new\+Card }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classuno_1_1_player}{Player}} draws a card by adding the card to the cards List. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Card} & the card drawn by the player \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classuno_1_1_player_a2ec380b281354b36931f43c4ed5a6fe0}\label{classuno_1_1_player_a2ec380b281354b36931f43c4ed5a6fe0}} 
+\index{uno.Player@{uno.Player}!getCard@{getCard}}
+\index{getCard@{getCard}!uno.Player@{uno.Player}}
+\doxysubsubsection{\texorpdfstring{getCard()}{getCard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classuno_1_1_card}{Card}} uno.\+Player.\+get\+Card (\begin{DoxyParamCaption}\item[{int}]{card\+Index }\end{DoxyParamCaption})}
+
+get the card with a particular index. The index starts at 0. 
+\begin{DoxyParams}{Parameters}
+{\em card\+Index} & The index of the card \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the card with a particular index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classuno_1_1_player_aeba1e865cb32d7b21cb9f207e04213ad}\label{classuno_1_1_player_aeba1e865cb32d7b21cb9f207e04213ad}} 
+\index{uno.Player@{uno.Player}!getCardCount@{getCardCount}}
+\index{getCardCount@{getCardCount}!uno.Player@{uno.Player}}
+\doxysubsubsection{\texorpdfstring{getCardCount()}{getCardCount()}}
+{\footnotesize\ttfamily int uno.\+Player.\+get\+Card\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get the number of cards the \mbox{\hyperlink{classuno_1_1_player}{Player}} has \begin{DoxyReturn}{Returns}
+the number of cards 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classuno_1_1_player_a75d2ad088793a1313eb1137d8a188a04}\label{classuno_1_1_player_a75d2ad088793a1313eb1137d8a188a04}} 
+\index{uno.Player@{uno.Player}!playOutCard@{playOutCard}}
+\index{playOutCard@{playOutCard}!uno.Player@{uno.Player}}
+\doxysubsubsection{\texorpdfstring{playOutCard()}{playOutCard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classuno_1_1_card}{Card}} uno.\+Player.\+play\+Out\+Card (\begin{DoxyParamCaption}\item[{int}]{card\+Index }\end{DoxyParamCaption})}
+
+remove a card from the \mbox{\hyperlink{classuno_1_1_player}{Player}}\textquotesingle{}s hand card This function is called in \mbox{\hyperlink{classuno_1_1_server}{Server}} after checking the validity of the card. 
+\begin{DoxyParams}{Parameters}
+{\em card\+Index} & The index of the card \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the card that is played out 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classuno_1_1_player_a1459310dad566aae49532ded63f247bf}\label{classuno_1_1_player_a1459310dad566aae49532ded63f247bf}} 
+\index{uno.Player@{uno.Player}!printCards@{printCards}}
+\index{printCards@{printCards}!uno.Player@{uno.Player}}
+\doxysubsubsection{\texorpdfstring{printCards()}{printCards()}}
+{\footnotesize\ttfamily void uno.\+Player.\+print\+Cards (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+print the information of all the \mbox{\hyperlink{classuno_1_1_player}{Player}}\textquotesingle{}s hand card This function will call print\+Card\+Info() in \mbox{\hyperlink{classuno_1_1_card}{Card}} class 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/wangy/\+Idea\+Projects/sp21-\/cs242-\/assignment1/src/uno/Player.\+java\end{DoxyCompactItemize}

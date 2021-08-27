@@ -1,0 +1,92 @@
+\hypertarget{classuno_1_1_card}{}\doxysection{uno.\+Card Class Reference}
+\label{classuno_1_1_card}\index{uno.Card@{uno.Card}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classuno_1_1_card_a6591462e616a8baef70a7e7e7f6a2770}{Card}} (\mbox{\hyperlink{enumuno_1_1_util_1_1_color}{Color}} new\+Color, int new\+Number, \mbox{\hyperlink{enumuno_1_1_util_1_1_special}{Special}} new\+Special)
+\item 
+\mbox{\Hypertarget{classuno_1_1_card_a640fef74d1b4e42890f587583c32636c}\label{classuno_1_1_card_a640fef74d1b4e42890f587583c32636c}} 
+\mbox{\hyperlink{enumuno_1_1_util_1_1_color}{Color}} {\bfseries get\+Color} ()
+\item 
+\mbox{\Hypertarget{classuno_1_1_card_a469a75bbef5f35056d7f779897d6e9d9}\label{classuno_1_1_card_a469a75bbef5f35056d7f779897d6e9d9}} 
+int {\bfseries get\+Number} ()
+\item 
+\mbox{\Hypertarget{classuno_1_1_card_ac1a7bfca247de92a251933f003058a3c}\label{classuno_1_1_card_ac1a7bfca247de92a251933f003058a3c}} 
+\mbox{\hyperlink{enumuno_1_1_util_1_1_special}{Special}} {\bfseries get\+Special} ()
+\item 
+void \mbox{\hyperlink{classuno_1_1_card_a9e38b827a77e4efa5982f35022d19d47}{print\+Card\+Info}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classuno_1_1_card}{Card}} \mbox{\hyperlink{classuno_1_1_card_a69185eb2e9507c8b29c5afb6934c6748}{create\+Normal\+Card}} (\mbox{\hyperlink{enumuno_1_1_util_1_1_color}{Color}} color, int number)
+\item 
+static \mbox{\hyperlink{classuno_1_1_card}{Card}} \mbox{\hyperlink{classuno_1_1_card_ac5b346edb7cf573ccab7bfd8a352f993}{create\+Special\+Card}} (\mbox{\hyperlink{enumuno_1_1_util_1_1_color}{Color}} color, \mbox{\hyperlink{enumuno_1_1_util_1_1_special}{Special}} special)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{classuno_1_1_card}{Card}} Object represents a single card in UNO. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classuno_1_1_card_a6591462e616a8baef70a7e7e7f6a2770}\label{classuno_1_1_card_a6591462e616a8baef70a7e7e7f6a2770}} 
+\index{uno.Card@{uno.Card}!Card@{Card}}
+\index{Card@{Card}!uno.Card@{uno.Card}}
+\doxysubsubsection{\texorpdfstring{Card()}{Card()}}
+{\footnotesize\ttfamily uno.\+Card.\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumuno_1_1_util_1_1_color}{Color}}}]{new\+Color,  }\item[{int}]{new\+Number,  }\item[{\mbox{\hyperlink{enumuno_1_1_util_1_1_special}{Special}}}]{new\+Special }\end{DoxyParamCaption})}
+
+Initialize a \mbox{\hyperlink{classuno_1_1_card}{Card}} Object 
+\begin{DoxyParams}{Parameters}
+{\em new\+Color} & The color of the card, Color.\+NONE if the card is a wild card \\
+\hline
+{\em new\+Number} & The number of the card, -\/1 if the card has no number \\
+\hline
+{\em new\+Special} & The special type of the card, Special.\+NONE is the card has number \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classuno_1_1_card_a69185eb2e9507c8b29c5afb6934c6748}\label{classuno_1_1_card_a69185eb2e9507c8b29c5afb6934c6748}} 
+\index{uno.Card@{uno.Card}!createNormalCard@{createNormalCard}}
+\index{createNormalCard@{createNormalCard}!uno.Card@{uno.Card}}
+\doxysubsubsection{\texorpdfstring{createNormalCard()}{createNormalCard()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classuno_1_1_card}{Card}} uno.\+Card.\+create\+Normal\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumuno_1_1_util_1_1_color}{Color}}}]{color,  }\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialize a card with number 
+\begin{DoxyParams}{Parameters}
+{\em color} & The new color of the card \\
+\hline
+{\em number} & The number of the card \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a card object with number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classuno_1_1_card_ac5b346edb7cf573ccab7bfd8a352f993}\label{classuno_1_1_card_ac5b346edb7cf573ccab7bfd8a352f993}} 
+\index{uno.Card@{uno.Card}!createSpecialCard@{createSpecialCard}}
+\index{createSpecialCard@{createSpecialCard}!uno.Card@{uno.Card}}
+\doxysubsubsection{\texorpdfstring{createSpecialCard()}{createSpecialCard()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classuno_1_1_card}{Card}} uno.\+Card.\+create\+Special\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumuno_1_1_util_1_1_color}{Color}}}]{color,  }\item[{\mbox{\hyperlink{enumuno_1_1_util_1_1_special}{Special}}}]{special }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialize a card with special effects 
+\begin{DoxyParams}{Parameters}
+{\em color} & The new color of the card \\
+\hline
+{\em special} & The special effect of the card \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a card object with special 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classuno_1_1_card_a9e38b827a77e4efa5982f35022d19d47}\label{classuno_1_1_card_a9e38b827a77e4efa5982f35022d19d47}} 
+\index{uno.Card@{uno.Card}!printCardInfo@{printCardInfo}}
+\index{printCardInfo@{printCardInfo}!uno.Card@{uno.Card}}
+\doxysubsubsection{\texorpdfstring{printCardInfo()}{printCardInfo()}}
+{\footnotesize\ttfamily void uno.\+Card.\+print\+Card\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print out the color, number, and special effect of the card to standard output 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/wangy/\+Idea\+Projects/sp21-\/cs242-\/assignment1/src/uno/Card.\+java\end{DoxyCompactItemize}
